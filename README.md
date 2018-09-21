@@ -5,7 +5,7 @@ Uses the new R2018b `memoryview` to efficiently transfer large variables without
 ## Setup
 
 Matlab R2018b
-[supports Python versions]([supports Python versions](https://www.mathworks.com/help/matlab/matlab_external/system-requirements-for-matlab-engine-for-python.html)) 
+[supports Python versions](https://www.mathworks.com/help/matlab/matlab_external/system-requirements-for-matlab-engine-for-python.html) 
 2.7, 3.5 and 3.6.
 Thus you may need to setup Python 3.6 if your usual workflow is with Python 3.7 etc.
 
