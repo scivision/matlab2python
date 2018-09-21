@@ -26,3 +26,15 @@ Thus you may need to setup Python 3.6 if your usual workflow is with Python 3.7 
       isloaded: 0
    ```
 
+## Notes
+
+### Unsupported Python version errors
+
+If you use an unsupported version of Python, like Python 3.7 with Matlab R2018b, you may get errors like
+
+>  Python Error: ModuleNotFoundError: No module named 'libmwbuffer'
+Python function '' might not be able to accept at least one input argument at position 1. The function may
+require a specific data type that you can construct from the MATLAB array. For more information, see the
+documentation for Python function '' and working with Python arrays.
+
+Solution is to select a supported Python version as detailed above.
