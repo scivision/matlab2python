@@ -1,28 +1,27 @@
 # matlab2python
-Examples of Matlab &ge; R2018b calling Python functions.
-Uses the new R2018b `memoryview` to efficiently transfer large variables without copying, as Matlab R2014b..R2018a had required.
+
+Examples of Matlab &ge; R2018b calling Python functions with `memoryview` to efficiently transfer large variables without copying in memory, unlike older Matlab versions.
 
 ## Setup
 
-Matlab R2018b
+Matlab R2019a
 [supports Python versions](https://www.mathworks.com/help/matlab/matlab_external/system-requirements-for-matlab-engine-for-python.html) 
-2.7, 3.5 and 3.6.
-Thus you may need to setup Python 3.6 if your usual workflow is with Python 3.7 etc.
+2.7, 3.5, 3.6 and 3.7.
 
-1. create Python 3.6 virtual environment (assuming Anaconda Python)
-   ```sh
-   conda create -n py36 python=3.6
-   ```
-2. set Matlab to Python 3.6 by restarting Matlab and then in Matlab
+Matlab needs to be told the location of the desired Python executable, particularly if you use virtual environments or have more than one Python version installed.
+Here we assume the desired Python executable is at `~/miniconda3/bin/python`. 
+Use similar commands for `c:/miniconda3/python.exe` on Windows.
+
+1. Restart Matlab and in Matlab:
    ```matlab
-   pyversion ~/miniconda3/envs/py36/bin/python
+   pyversion ~/miniconda3/bin/python
    ```
-3. verify Matlab Python config by typing `pyversion`:
+2. verify Matlab Python config by typing `pyversion`:
    ```
-        version: '3.6'
-    executable: '~/miniconda3/envs/py36/bin/python'
-       library: '~/miniconda3/envs/py36/lib/libpython3.6m.so'
-          home: '~/miniconda3/envs/py36'
+        version: '3.7'
+    executable: '~/miniconda3/bin/python'
+       library: '~/miniconda3/lib/libpython3.7m.so'
+          home: '~/miniconda3'
       isloaded: 0
    ```
 
