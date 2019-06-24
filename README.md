@@ -29,11 +29,13 @@ Use similar commands for `c:/miniconda3/python.exe` on Windows.
 
 ### Unsupported Python version errors
 
-If you use an unsupported version of Python, like Python 3.7 with Matlab R2018b, you may get errors like
+If you use an unsupported version of Python, errors will occur like
 
 >  Python Error: ModuleNotFoundError: No module named 'libmwbuffer'
 Python function '' might not be able to accept at least one input argument at position 1. The function may
 require a specific data type that you can construct from the MATLAB array. For more information, see the
 documentation for Python function '' and working with Python arrays.
 
-Solution is to select a supported Python version as detailed above.
+Solution is to select a 
+[Matlab-supported Python version](https://www.mathworks.com/help/matlab/matlab_external/system-requirements-for-matlab-engine-for-python.html)
+as noted above.
