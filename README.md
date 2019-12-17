@@ -4,9 +4,9 @@ Examples of Matlab &ge; R2018b calling Python functions with `memoryview` to eff
 
 ## Setup
 
-Matlab R2019a
+Matlab R2019b
 [supports Python versions](https://www.mathworks.com/help/matlab/matlab_external/system-requirements-for-matlab-engine-for-python.html) 
-2.7, 3.5, 3.6 and 3.7.
+2.7, 3.6 and 3.7.
 
 Matlab needs to be told the location of the desired Python executable, particularly if you use virtual environments or have more than one Python version installed.
 Here we assume the desired Python executable is at `~/miniconda3/bin/python`. 
