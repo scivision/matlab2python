@@ -6,14 +6,6 @@ Examples of Matlab &ge; R2018b calling Python functions with `memoryview` to eff
 
 Matlab [supports calling Python functions](https://www.mathworks.com/help/matlab/matlab_external/system-requirements-for-matlab-engine-for-python.html).
 
-Matlab needs to be told the location of the desired Python executable, particularly if you use virtual environments or have more than one Python version installed.
-Here we assume the desired Python executable is at `~/miniconda3/bin/python`. 
-Use similar commands for `c:/miniconda3/python.exe` on Windows.
-
-## Notes
-
-### Unsupported Python version errors
-
 If you use an unsupported version of Python, errors will occur like
 
 >  Python Error: ModuleNotFoundError: No module named 'libmwbuffer'
